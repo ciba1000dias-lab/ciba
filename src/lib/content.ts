@@ -1,22 +1,24 @@
 /**
  * Capa de acceso tipado al contenido de CIBA.
- * Centraliza getCollection() y normaliza orden, filtros y validaciones cruzadas.
+ *
+ * - `articulos` se lee con getCollection (única colección de Astro).
+ * - `subareas`, `sinonimos`, `faq`, `recursos` se leen de `datos.ts`
+ *   (datos estáticos validados con Zod en el Paso E.3).
  */
-
 import { getCollection } from 'astro:content';
 import type { AreaId } from '../content/config';
 import type {
-  ArticuloEntry,
+  AreaInfo,
   ArticuloConSubarea,
+  ArticuloEntry,
   FAQ,
   GrupoSinonimos,
   Recurso,
   Subarea,
 } from './types';
+import { faq as faqData, recursos as recursosData, sinonimos as sinonimosData, subareas as subareasData } from './datos';
 
 // --- Mapa de información por área (para header, home, breadcrumbs) ---
-import type { AreaInfo } from './types';
-
 export const AREAS_INFO: Record<AreaId, AreaInfo> = {
   crianza: {
     id: 'crianza',
@@ -68,24 +70,21 @@ export const AREAS_INFO: Record<AreaId, AreaInfo> = {
   },
 };
 
-// --- Subáreas ---
+// --- Subáreas (datos estáticos) ---
 
 export async function getSubareas(): Promise<Subarea[]> {
-  const entries = await getCollection('subareas');
-  return entries.map((e) => e.data);
+  return [...subareasData];
 }
 
 export async function getSubareasPorArea(area: AreaId): Promise<Subarea[]> {
-  const todas = await getSubareas();
-  return todas.filter((s) => s.area === area).sort((a, b) => a.id.localeCompare(b.id));
+  return subareasData.filter((s) => s.area === area).sort((a, b) => a.id.localeCompare(b.id));
 }
 
 export async function getSubareaPorId(id: string): Promise<Subarea | undefined> {
-  const todas = await getSubareas();
-  return todas.find((s) => s.id === id);
+  return subareasData.find((s) => s.id === id);
 }
 
-// --- Artículos ---
+// --- Artículos (única colección Astro) ---
 
 export async function getArticulos(opciones?: {
   soloPublicados?: boolean;
@@ -126,31 +125,28 @@ export async function getArticuloPorSlug(slug: string): Promise<ArticuloEntry | 
   return articulos.find((a) => a.data.slug === slug);
 }
 
-// --- FAQ ---
+// --- FAQ (datos estáticos) ---
 
 export async function getFAQs(filtro?: { area?: AreaId; tema_id?: string }): Promise<FAQ[]> {
-  const entries = await getCollection('faq');
-  let faqs = entries.map((e) => e.data);
+  let faqs: FAQ[] = [...faqData];
   if (filtro?.area) faqs = faqs.filter((f) => f.area === filtro.area);
   if (filtro?.tema_id) faqs = faqs.filter((f) => f.tema_id === filtro.tema_id);
   return faqs;
 }
 
-// --- Recursos ---
+// --- Recursos (datos estáticos) ---
 
 export async function getRecursos(soloVerificados = true): Promise<Recurso[]> {
-  const entries = await getCollection('recursos');
-  const recursos = entries.map((e) => e.data);
+  const recursos: Recurso[] = [...recursosData];
   return (soloVerificados ? recursos.filter((r) => r.verificado) : recursos).sort(
     (a, b) => a.nombre.localeCompare(b.nombre)
   );
 }
 
-// --- Sinónimos ---
+// --- Sinónimos (datos estáticos) ---
 
 export async function getSinonimos(): Promise<GrupoSinonimos[]> {
-  const entries = await getCollection('sinonimos');
-  return entries.flatMap((e) => e.data);
+  return [...sinonimosData];
 }
 
 // --- Validación cruzada (llamada desde scripts/validar-contenido.mjs) ---
