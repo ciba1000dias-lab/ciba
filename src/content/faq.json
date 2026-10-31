@@ -1,0 +1,125 @@
+{
+  "version": "1.0",
+  "faq": [
+    {
+      "id": "faq-001",
+      "pregunta": "¿Cuánta leche debe tomar un recién nacido?",
+      "respuesta_corta": "Los primeros días el estómago del bebé es muy pequeño. Lo más fiable es la lactancia a demanda y vigilar pañales mojados y ganancia de peso en los controles. Si tienes dudas sobre la cantidad, consulta con tu pediatra.",
+      "tema_id": "cri-004",
+      "edad": ["0-28d"],
+      "area": "crianza"
+    },
+    {
+      "id": "faq-002",
+      "pregunta": "¿Es normal que el bebé llore todas las tardes?",
+      "respuesta_corta": "El llanto vespertino es frecuente en las primeras semanas y suele disminuir hacia los 3–4 meses. Si el llanto es inconsolable, el bebé tiene fiebre o rechaza el pecho, consulta sin esperar.",
+      "tema_id": "aco-002",
+      "edad": ["0-28d", "1-3m", "4-6m"],
+      "area": "acompanamiento"
+    },
+    {
+      "id": "faq-003",
+      "pregunta": "¿Cuándo se puede empezar la alimentación complementaria?",
+      "respuesta_corta": "Alrededor de los 6 meses, cuando el bebé muestra señales de preparación (se sostiene sentado con apoyo, muestra interés por la comida, ha perdido el reflejo de extrusión). La leche materna sigue siendo el alimento principal hasta el año.",
+      "tema_id": "cri-004",
+      "edad": ["4-6m"],
+      "area": "crianza"
+    },
+    {
+      "id": "faq-004",
+      "pregunta": "¿Cómo sé si mi bebé tiene fiebre?",
+      "respuesta_corta": "Se considera fiebre una temperatura axilar ≥ 38 °C. En menores de 3 meses, cualquier fiebre requiere valoración médica inmediata. No uses remedios caseros para bajarla sin consultar.",
+      "tema_id": "bie-003",
+      "edad": ["0-28d", "1-3m"],
+      "area": "bienestar"
+    },
+    {
+      "id": "faq-005",
+      "pregunta": "¿Es seguro dormir con el bebé en la misma cama?",
+      "respuesta_corta": "La recomendación general es que el bebé duerma en su cuna, en la misma habitación que los padres, durante los primeros 6 meses. El colecho tiene riesgos que deben valorarse individualmente con el pediatra.",
+      "tema_id": "cri-003",
+      "edad": ["0-28d", "1-3m", "4-6m"],
+      "area": "crianza"
+    },
+    {
+      "id": "faq-006",
+      "pregunta": "¿Cómo empiezo a destetar?",
+      "respuesta_corta": "El destete debe ser gradual y respetuoso, adaptado al ritmo del bebé y de la madre. No hay una edad única. Si es posible, sustitúyelo por otro vínculo (abrazo, juego, contacto) antes de retirar la toma.",
+      "tema_id": "aco-003",
+      "edad": ["13-18m", "19-24m"],
+      "area": "acompanamiento"
+    },
+    {
+      "id": "faq-007",
+      "pregunta": "¿Qué hago si mi bebé no quiere prenderse al pecho?",
+      "respuesta_corta": "Revisa el agarre, el estado de la madre (congestión, grietas) y el entorno (ruido, estrés). Un especialista en lactancia o tu pediatra pueden ayudarte. No es fracaso; es una situación frecuente y con solución.",
+      "tema_id": "aco-003",
+      "edad": ["0-28d", "1-3m"],
+      "area": "acompanamiento"
+    },
+    {
+      "id": "faq-008",
+      "pregunta": "¿Cuánto tiempo debe dormir un bebé?",
+      "respuesta_corta": "Los recién nacidos duermen 14–17 h al día en ciclos cortos. A los 6 meses suelen hacer 2–3 siestas. Cada bebé es distinto: lo importante es que tenga rutinas seguras y que la familia descanse lo posible.",
+      "tema_id": "bie-006",
+      "edad": ["0-28d", "1-3m", "4-6m"],
+      "area": "bienestar"
+    },
+    {
+      "id": "faq-009",
+      "pregunta": "¿Son seguras las pantallas para mi bebé?",
+      "respuesta_corta": "Antes de los 2 años se recomienda evitar pantallas, salvo videollamadas con familiares. Si se usan, que sean breves, acompañadas por un adulto y con contenido adecuado.",
+      "tema_id": "inf-003",
+      "edad": ["0-28d", "1-3m", "4-6m", "7-9m", "10-12m", "13-18m", "19-24m"],
+      "area": "informatica"
+    },
+    {
+      "id": "faq-010",
+      "pregunta": "¿Puedo publicar fotos de mi bebé en redes sociales?",
+      "respuesta_corta": "Antes de publicar, pregúntate: ¿quién podrá verla? ¿podría borrarla mañana? ¿la usaría cuando sea adolescente? Configura perfiles privados, evita datos identificativos y no publiques imágenes íntimas o en situaciones vulnerables.",
+      "tema_id": "inf-002",
+      "edad": ["0-28d", "1-3m", "4-6m", "7-9m", "10-12m", "13-18m", "19-24m"],
+      "area": "informatica"
+    },
+    {
+      "id": "faq-011",
+      "pregunta": "Me siento triste y cansada desde que nació el bebé. ¿Es normal?",
+      "respuesta_corta": "El cansancio y la tristeza son frecuentes, pero si se mantienen más de dos semanas, si te cuesta disfrutar o sientes que no puedes con el día a día, puede ser depresión posparto. No es debilidad: es un problema de salud tratable. Consulta con tu médico.",
+      "tema_id": "bie-002",
+      "edad": ["0-28d", "1-3m"],
+      "area": "bienestar"
+    },
+    {
+      "id": "faq-012",
+      "pregunta": "¿Cuándo debo ir a urgencias con un bebé?",
+      "respuesta_corta": "Ante fiebre en menor de 3 meses, dificultad para respirar, somnolencia anormal, convulsiones, vómitos repetidos, no mojar pañales en 12 h o sangre en heces, acude a urgencias de inmediato. No esperes la respuesta de Nayara.",
+      "tema_id": "aco-005",
+      "edad": ["0-28d", "1-3m", "4-6m", "7-9m", "10-12m", "13-18m", "19-24m"],
+      "area": "acompanamiento"
+    },
+    {
+      "id": "faq-013",
+      "pregunta": "¿Qué hago si mi bebé tiene cólicos?",
+      "respuesta_corta": "Los cólicos son frecuentes hasta los 3–4 meses. Prueba contacto piel con piel, masaje suave en la barriga, cambios de posición. Evita remedios caseros sin consultar. Si hay vómitos, sangre o fiebre, no es cólico: consulta.",
+      "tema_id": "aco-002",
+      "edad": ["0-28d", "1-3m", "4-6m"],
+      "area": "acompanamiento"
+    },
+    {
+      "id": "faq-014",
+      "pregunta": "¿Cómo sé que mi bebé está creciendo bien?",
+      "respuesta_corta": "Los controles pediátricos con peso, talla y curva de crecimiento son la forma más fiable. En casa, observa la actitud del bebé, el apetito y los pañales. Cada bebé crece a su ritmo; lo importante es la tendencia.",
+      "tema_id": "bie-003",
+      "edad": ["0-28d", "1-3m", "4-6m", "7-9m", "10-12m", "13-18m", "19-24m"],
+      "area": "bienestar"
+    },
+    {
+      "id": "faq-015",
+      "pregunta": "¿Es fiable la información sobre crianza que veo en internet?",
+      "respuesta_corta": "No toda. Contrasta con fuentes como OMS, UNICEF, OPS o tu pediatra. Desconfía de recetas milagrosas, testimonios únicos y promesas de resultados rápidos. En CIBA encontrarás artículos con referencias verificables.",
+      "tema_id": "inf-001",
+      "edad": ["0-28d", "1-3m", "4-6m", "7-9m", "10-12m", "13-18m", "19-24m"],
+      "area": "informatica"
+    }
+  ]
+}
