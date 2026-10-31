@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "grupos": [
+    { "canonico": "fiebre", "variantes": ["temperatura", "calentura", "febril", "caliente", "grados"] },
+    { "canonico": "lactancia", "variantes": ["pecho", "tetar", "amamantar", "seno", "leche materna", "dar pecho", "lactar"] },
+    { "canonico": "biberon", "variantes": ["mamadera", "tetero", "biberón", "fórmula", "formula", "leche de fórmula"] },
+    { "canonico": "pañal", "variantes": ["pamper", "pañales", "heces", "caca", "deposición", "popó", "orina", "pipí"] },
+    { "canonico": "sueño", "variantes": ["dormir", "descanso", "siesta", "no duerme", "insomnio", "despierta mucho"] },
+    { "canonico": "cólico", "variantes": ["cólicos", "dolor de barriga", "gases", "retortijón", "barriga dura"] },
+    { "canonico": "reflujo", "variantes": ["vómito", "devuelve", "regurgita", "arroja leche", "reflujo gastroesofágico"] },
+    { "canonico": "vacuna", "variantes": ["vacunación", "inyección", "pinchazo", "calendario vacunal", "inmunización"] },
+    { "canonico": "dentición", "variantes": ["dientes", "salida de dientes", "primer diente", "encías"] },
+    { "canonico": "destete", "variantes": ["quitar pecho", "dejar lactancia", "destetar", "transición a sólidos"] },
+    { "canonico": "alimentación complementaria", "variantes": ["comida", "papilla", "puré", "blw", "baby led weaning", "sólidos", "empezar a comer"] },
+    { "canonico": "rabieta", "variantes": ["berrinche", "pataleo", "rabietas", "berrinches", "explosión emocional"] },
+    { "canonico": "llanto", "variantes": ["llora", "llorar", "no para de llorar", "consuelo"] },
+    { "canonico": "ansiedad", "variantes": ["nervios", "angustia", "preocupación", "miedo", "ataque de pánico"] },
+    { "canonico": "depresión posparto", "variantes": ["depresión postparto", "tristeza posparto", "baby blues", "melancolía"] },
+    { "canonico": "pantallas", "variantes": ["celular", "tablet", "televisión", "tv", "videojuegos", "youtube", "tiktok"] },
+    { "canonico": "privacidad", "variantes": ["publicar fotos", "fotos del bebé", "redes sociales", "sharenting", "datos personales"] },
+    { "canonico": "desarrollo", "variantes": ["hitos", "crecimiento", "gatear", "caminar", "hablar", "motricidad", "sentarse"] },
+    { "canonico": "peso", "variantes": ["kilos", "gramos", "talla", "curva de crecimiento", "percentil"] },
+    { "canonico": "emergencia", "variantes": ["urgencia", "convolsión", "convulsión", "no respira", "ahogo", "sangra", "inconsciente"] },
+    { "canonico": "chupete", "variantes": ["pacifier", "chupón", "tete", "chupeta"] },
+    { "canonico": "porteo", "variantes": ["fular", "portabebé", "mochila portabebé", "cargar al bebé"] },
+    { "canonico": "estimulación temprana", "variantes": ["ejercicios", "masajes", "actividades", "juegos para bebés"] },
+    { "canonico": "guardería", "variantes": ["círculo infantil", "nido", "kindergarten", "cuidado infantil"] },
+    { "canonico": "pareja", "variantes": ["esposo", "marido", "esposa", "relación", "matrimonio", "paternidad"] }
+  ]
+}
